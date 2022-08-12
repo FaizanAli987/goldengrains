@@ -1,0 +1,165 @@
+@font-face{
+    font-family:"helvetica-lt-std-light";
+    src:url("https://candyfonts.com/wp-data/2019/04/06/51311/HelveticaLTStd-Light.otf") format("woff"),
+    url("https://candyfonts.com/wp-data/2019/04/06/51311/HelveticaLTStd-Light.otf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2019/04/06/51311/HelveticaLTStd-Light.otf") format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+.navbar{
+  background-color:  #fab97e ;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+.navbar-brand{
+    margin: 0 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #201b1d;
+    position: relative;
+    padding: 1rem 0;
+    letter-spacing: inherit;
+    line-height: 1;
+    color: #201b1d;
+    padding-bottom: 1px;
+}
+.nav-item{
+    margin-right: 4rem;
+}
+.nav-item-left {
+    margin-left: 4rem;
+    margin-right: 0rem;
+}
+.navbar-brand{
+    position: relative;
+}
+.navbar-brand a{
+    position: absolute;
+    width: 85px;
+    top: -40px;
+    background: #fab97e;
+    height: 100px;
+    padding: 16px 4rem 30px 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 76px 76px;
+}
+.about-section{
+    position: relative;
+}
+.about-section .row{
+    flex-wrap: wrap-reverse;
+}
+.sec-box{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 15px;
+}
+.about-img img{
+    width: 100%;
+}
+.background-svg img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -64px;
+    z-index: 10;
+}
+.product-div{
+    margin: 10px 0;
+}
+.products-section{
+    background-color: rgb(218, 218, 218);
+    position: relative;
+}
+.products-section .sec-box{
+    padding: 30px 15px 60px 15px;
+}
+.product-img{
+    border-bottom: 1px solid #c5c5c5;
+}
+.product-img img{
+    margin: auto;
+    display: block;
+}
+.product-description{
+    text-align: center;
+}
+.product-description a{
+    text-decoration: none;
+}
+.product-name a{ 
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    padding-right: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+}
+.product-price a{
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-size: 12px;
+    font-weight: 500;
+    color: #909077;
+}
+.product-img{
+    transition: .3s;
+}
+.product-div:hover .product-img{
+    box-shadow: rgb(50 50 93 / 25%) 0px 12px 12px -9px, rgb(0 0 0 / 30%) 0px 0px 1px -3px;
+}
+.span-header{
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+}
+.span-header span{
+    background: #0a8002;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+.span-header::before
+{
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/before.png);
+    height: 1px;
+    width: 94px;
+    background-size: contain;
+    margin-left: -94px;
+    margin-top: 10px;
+}
+.span-header::after
+{
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/after.png);
+    height: 1px;
+    width: 94px;
+    background-size: contain;
+    margin-right: -94px;
+    margin-top: 10px;
+}
